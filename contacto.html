@@ -14,8 +14,10 @@
 
   <main>
     <div id="contenedor_contacto">
+
+      <!-- Datos personales -->
       <div id="form_1">
-        <form>
+        <form id="form_datos">
           <label for="nombre">Nombre (requerido):</label>
           <input id="nombre" name="nombre" type="text" maxlength="20" required>
 
@@ -37,54 +39,69 @@
           <label for="provincia">Provincia:</label>
           <input id="provincia" name="provincia" type="text" list="provincias">
           <datalist id="provincias">
-            <option value="Neuquen"></option>
-            <option value="Rio Negro"></option>
-            <option value="Chubut"></option>
-            <option value="Santa Cruz"></option>
-            <option value="Tierra del Fuego"></option>
+            <option value="Neuquen">
+            <option value="Rio Negro">
+            <option value="Chubut">
+            <option value="Santa Cruz">
+            <option value="Tierra del Fuego">
           </datalist>
 
           <label for="cp">Código Postal:</label>
-          <input id="cp" name="codigo_postal" type="text" pattern="^[A-Za-z]\d{4}[A-Za-z]{3}$" placeholder="A1234ABC" minlength="8" maxlength="8">
+          <input id="cp" name="codigo_postal" type="text"
+                 pattern="^[A-Za-z]\d{4}[A-Za-z]{3}$"
+                 placeholder="A1234ABC"
+                 minlength="8" maxlength="8">
         </form>
       </div>
+
+      <!-- Texto extra -->
       <article class="bio-texto">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-  <div id="texto-extra">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
-    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...</p>
-  </div>
-  <button id="leer-mas">Leer más</button>
-</article>
-      <fieldset id="met_preferido_contacto">
-        <legend>Método Preferido de contacto:</legend>
-        <input type="radio" id="correo_electronico" name="met_contacto" value="correo_electronico" checked>
-        <label for="correo_electronico">Correo electrónico</label>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <div id="texto-extra">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+          <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...</p>
+        </div>
+        <button id="leer-mas" type="button">Leer más</button>
+      </article>
 
-        <input type="radio" id="correo_postal" name="met_contacto" value="correo_postal">
-        <label for="correo_postal">Correo postal</label>
+      <!-- Método de contacto (envuelto en form como en el código correcto) -->
+      <form id="form_contacto">
+        <fieldset id="met_preferido_contacto">
+          <legend>Método Preferido de contacto:</legend>
 
-        <input type="radio" id="telefono_contacto" name="met_contacto" value="telefono">
-        <label for="telefono_contacto">Teléfono</label>
-      </fieldset>
+          <input type="radio" id="correo_electronico" name="met_contacto" value="correo_electronico" checked>
+          <label for="correo_electronico">Correo electrónico</label>
 
-      <fieldset id="tipo_suscripcion">
-        <legend>Tipo de suscripción:</legend>
-        <input type="checkbox" id="noticias" name="suscripcion1" value="noticias">
-        <label for="noticias">Noticias</label>
+          <input type="radio" id="correo_postal" name="met_contacto" value="correo_postal">
+          <label for="correo_postal">Correo postal</label>
 
-        <input type="checkbox" id="Promociones" name="suscripcion2" value="Promociones">
-        <label for="Promociones">Promociones</label>
+          <input type="radio" id="telefono_contacto" name="met_contacto" value="telefono">
+          <label for="telefono_contacto">Teléfono</label>
+        </fieldset>
+      </form>
 
-        <input type="checkbox" id="Alertas" name="suscripcion3" value="Alertas">
-        <label for="Alertas">Alertas</label>
+      <!-- Suscripciones (envuelto en form y botón submit correcto) -->
+      <form id="form_suscripciones">
+        <fieldset id="tipo_suscripcion">
+          <legend>Tipo de suscripción:</legend>
 
-        <input type="checkbox" id="Eventos" name="suscripcion4" value="Eventos">
-        <label for="Eventos">Eventos</label>
-      </fieldset>
+          <input type="checkbox" id="noticias" name="suscripcion1" value="noticias">
+          <label for="noticias">Noticias</label>
 
-      <button type="submit">Cargar</button>
+          <input type="checkbox" id="Promociones" name="suscripcion2" value="Promociones">
+          <label for="Promociones">Promociones</label>
 
+          <input type="checkbox" id="Alertas" name="suscripcion3" value="Alertas">
+          <label for="Alertas">Alertas</label>
+
+          <input type="checkbox" id="Eventos" name="suscripcion4" value="Eventos">
+          <label for="Eventos">Eventos</label>
+        </fieldset>
+
+        <button type="submit">Cargar</button>
+      </form>
+
+      <!-- Tabla -->
       <table>
         <thead>
           <tr>
@@ -105,6 +122,7 @@
           <tr><td>Tipo de suscripción</td><td></td></tr>
         </tbody>
       </table>
+
     </div>
   </main>
 
@@ -117,3 +135,4 @@
 
 </body>
 </html>
+
