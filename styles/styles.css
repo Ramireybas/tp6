@@ -87,7 +87,7 @@ h2{
     margin-right: 100px;
 }
 
-#contacto-link {
+#contacto-link,#juego-link {
     font-size: 20px;
     font-weight: bold;
     color:white;   
@@ -324,4 +324,5 @@ main {
 .btn-subir:hover {
   background-color: #004b82;
 }
+
 
