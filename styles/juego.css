@@ -111,10 +111,10 @@ button:hover {
 }
 
 #volver-juego {
-  position: fixed;              /* se queda fijo en la pantalla */
-  left: 50%;                    /* centro en el eje X */
-  top: 70%;                     /* más abajo en el eje Y (ajusta este número) */
-  transform: translateX(-50%);  /* centra exactamente en X */
+  position: fixed;              
+  left: 50%;                    
+  top: 90%;                     
+  transform: translateX(-50%);  
   display: inline-block;
   padding: 6px 10px;
   border: 1px solid rgba(255,255,255,.6);
