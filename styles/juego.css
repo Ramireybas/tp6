@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f172a; /* azul oscuro */
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: #020617;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Títulos */
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 1rem 0 0.5rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+#btnGuess {
+  background: #22c55e; /* verde */
+  color: #022c22;
+}
+
+#btnReset {
+  background: #f59e0b; /* naranja */
+  color: #1c1917;
+}
+
+/* Mensajes */
+#message {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  min-height: 24px;
+}
+
+#attempts {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Estados opcionales (si luego quieres usarlos con JS) */
+.correct {
+  color: #22c55e;
+}
+
+.error {
+  color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
