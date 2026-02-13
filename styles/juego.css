@@ -109,3 +109,18 @@ button:hover {
     font-size: 1.6rem;
   }
 }
+
+#volver-juego {
+  position: fixed;              /* se queda fijo en la pantalla */
+  left: 50%;                    /* centro en el eje X */
+  top: 70%;                     /* más abajo en el eje Y (ajusta este número) */
+  transform: translateX(-50%);  /* centra exactamente en X */
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 8px;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
