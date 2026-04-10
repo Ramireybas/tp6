@@ -407,3 +407,18 @@ button:hover {
 .error {
   color: #ef4444;
 }
+
+#volver-juego {
+  position: fixed;              
+  left: 50%;                    
+  top: 5%;                     
+  transform: translateX(-50%);  
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 8px;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
